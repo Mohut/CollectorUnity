@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 272a7debb37998840988032d30c0032e, type: 2}
+  - {fileID: 2100000, guid: 6f51566c254528643bb3696f0e6b3081, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -109,12 +109,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBlue: 0
   played: 0
+  clip: {fileID: 8300000, guid: d6f79b5bf7a4a2142941b935fa69efa6, type: 3}
   volume: 1
   particleSystemB: {fileID: 4939848599511321767, guid: 7c0362b553680d74dadddeefd80043dc,
     type: 3}
   particleSystemR: {fileID: 2505475878984787020, guid: 7fd7c8cb20c199243b6606d345d0efe4,
     type: 3}
-  audioClip: {fileID: 8300000, guid: d6f79b5bf7a4a2142941b935fa69efa6, type: 3}
 --- !u!82 &-3540309383463877095
 AudioSource:
   m_ObjectHideFlags: 0

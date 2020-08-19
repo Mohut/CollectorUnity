@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,9 +10,19 @@ public class SoundEffect : MonoBehaviour
     private AudioSource source;
 
     // Update is called once per frame
-    void start()
+    void Start()
     {
         source = GetComponent<AudioSource>();
         source.PlayOneShot(audioClip, volume);
+    }
+
+    private void Update()
+    {
+        Invoke("delete", 1);
+    }
+
+    public void delete()
+    {
+        Destroy(gameObject);
     }
 }
