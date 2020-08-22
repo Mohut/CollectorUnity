@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -9,6 +8,7 @@ public class EndGame : MonoBehaviour
     public Slider slider;
     private float timer;
     private int currentSceneIndex;
+    public Animator animator;
 
     private void Start()
     {
@@ -16,7 +16,7 @@ public class EndGame : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+   void Update()
     {
         timer = FindObjectOfType<Timer>().timer;
         if (slider.value == 1)
@@ -28,8 +28,12 @@ public class EndGame : MonoBehaviour
 
         if (timer < 0)
         {
-            SceneManager.LoadScene(3);
+            animator.SetTrigger("FadeOut");
         }
     }
-    
+
+    public void animationEnd()
+    {
+        SceneManager.LoadScene(3);
+    }
 }
