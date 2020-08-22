@@ -31,23 +31,23 @@ public class Spawner : MonoBehaviour
         int randomColor = Random.Range(0, 2);
         int randomX = Random.Range(-46, 46);
         int randomZ = Random.Range(-46, 46);
-
+        if (!Physics.CheckBox(new Vector3(randomX, 2, randomZ), new Vector3(2, 0, 2), Quaternion.identity))
+        {
             if (randomColor == 1)
             {
-                if (!Physics.CheckBox(new Vector3(randomX, 2, randomZ), new Vector3(2, 0, 2), Quaternion.identity))
-                {
-                    Instantiate(collectableB, new Vector3(randomX, 2, randomZ), Quaternion.identity);
-                    FindObjectOfType<ObjectBar>().incrementProgress();
-                }
+                Instantiate(collectableB, new Vector3(randomX, 2, randomZ), Quaternion.identity);
+                FindObjectOfType<ObjectBar>().incrementProgress();
             }
             else
             {
-                if (!Physics.CheckBox(new Vector3(randomX, 2, randomZ), new Vector3(2, 0, 2), Quaternion.identity))
-                {
-                    Instantiate(collectableR, new Vector3(randomX, 2, randomZ), Quaternion.identity);
-                    FindObjectOfType<ObjectBar>().incrementProgress();
-                }
+                Instantiate(collectableR, new Vector3(randomX, 2, randomZ), Quaternion.identity);
+                FindObjectOfType<ObjectBar>().incrementProgress();
             }
+        }
+        else
+        {
+            spawn();
+        }
     }
 }
 

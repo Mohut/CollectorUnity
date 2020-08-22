@@ -1,11 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
-   private int previousScene;
    public void startGame()
    {
       SceneManager.LoadScene(3);
@@ -13,7 +10,7 @@ public class Buttons : MonoBehaviour
    
    public void retry()
    {
-      previousScene = PlayerPrefs.GetInt("lastScene");
+      int previousScene = PlayerPrefs.GetInt("lastScene");
       SceneManager.LoadScene(previousScene);
    }
 
@@ -26,4 +23,17 @@ public class Buttons : MonoBehaviour
    {
       SceneManager.LoadScene(0);
    }
+
+    public void nextLevel()
+    {
+        int previousScene = PlayerPrefs.GetInt("lastScene");
+        if (previousScene == 4)
+        {
+           SceneManager.LoadScene(5);
+        }
+        else
+        {
+           SceneManager.LoadScene(previousScene + 1);
+        }
+    }
 }

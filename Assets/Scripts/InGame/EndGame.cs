@@ -28,7 +28,7 @@ public class EndGame : MonoBehaviour
 
         if (timer < 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene(3);
         }
     }
     
