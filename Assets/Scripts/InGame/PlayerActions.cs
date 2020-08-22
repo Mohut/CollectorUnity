@@ -40,7 +40,7 @@ public class PlayerActions : MonoBehaviour
             rb.AddForce(velocity * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             if (isBlue == true)
             {
