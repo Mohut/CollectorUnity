@@ -29,8 +29,8 @@ public class Spawner : MonoBehaviour
     public void spawn()
     {
         int randomColor = Random.Range(0, 2);
-        int randomX = Random.Range(-47, 47);
-        int randomZ = Random.Range(-47, 47);
+        int randomX = Random.Range(-46, 46);
+        int randomZ = Random.Range(-46, 46);
         
         if (randomColor == 1)
         {
