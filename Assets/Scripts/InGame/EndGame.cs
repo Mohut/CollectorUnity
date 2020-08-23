@@ -8,7 +8,6 @@ public class EndGame : MonoBehaviour
     public Slider slider;
     private float timer;
     private int currentSceneIndex;
-    public Animator animator;
 
     private void Start()
     {
@@ -28,12 +27,7 @@ public class EndGame : MonoBehaviour
 
         if (timer < 0)
         {
-            animator.SetTrigger("FadeOut");
+            SceneManager.LoadScene(3);
         }
-    }
-
-    public void animationEnd()
-    {
-        SceneManager.LoadScene(3);
     }
 }
