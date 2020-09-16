@@ -47,7 +47,7 @@ public class PlayerActions : MonoBehaviour
         {
             if (isBlue == true)
             {
-                gameObject.GetComponent<Renderer>().material = red;
+                gameObject.GetComponent<Renderer>().material = red;           
                 source.PlayOneShot(clip, 1);
                 isBlue = false;
             }
