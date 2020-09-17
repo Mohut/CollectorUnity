@@ -36,4 +36,24 @@ public class Buttons : MonoBehaviour
            SceneManager.LoadScene(previousScene + 1);
         }
     }
+
+    public void GoLevel1()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void GoLevel2()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    public void GoLevel3()
+    {
+        SceneManager.LoadScene(6);
+    }
+
+    public void GoLevel4()
+    {
+        SceneManager.LoadScene(7);
+    }
 }
