@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5047817082284480832}
   - component: {fileID: 682754351835328722}
   - component: {fileID: -5898300149318431915}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: collectableB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,9 +109,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isBlue: 1
-  played: 0
-  clip: {fileID: 8300000, guid: d6f79b5bf7a4a2142941b935fa69efa6, type: 3}
-  volume: 1
   particleSystemB: {fileID: 4939848599511321767, guid: 7c0362b553680d74dadddeefd80043dc,
     type: 3}
   particleSystemR: {fileID: 2505475878984787020, guid: 7fd7c8cb20c199243b6606d345d0efe4,
