@@ -5,8 +5,14 @@ public class Buttons : MonoBehaviour
 {
    public void startGame()
    {
-      SceneManager.LoadScene(3);
+      SceneManager.LoadScene(1);
    }
+
+    public void NewGame()
+    {
+        PlayerPrefs.SetInt("unlocked", 1);
+        SceneManager.LoadScene(1);
+    }
    
    public void retry()
    {
@@ -27,11 +33,6 @@ public class Buttons : MonoBehaviour
     public void nextLevel()
     {
         int previousScene = PlayerPrefs.GetInt("lastScene");
-        if (previousScene == 4)
-        {
-           SceneManager.LoadScene(5);
-        }
-        else
         {
            SceneManager.LoadScene(previousScene + 1);
         }
@@ -55,5 +56,10 @@ public class Buttons : MonoBehaviour
     public void GoLevel4()
     {
         SceneManager.LoadScene(7);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
