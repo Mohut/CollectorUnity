@@ -30,6 +30,10 @@ public class EndGame : MonoBehaviour
 
         if (timer < 0)
         {
+            //save the current scene
+            currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            PlayerPrefs.SetInt("lastScene", currentSceneIndex);
+
             //save the complete status
             int currentLevel = SceneManager.GetActiveScene().buildIndex - 2;
             if (currentLevel >= PlayerPrefs.GetInt("unlocked",1) && currentLevel <= 4)

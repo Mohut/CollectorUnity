@@ -33,9 +33,14 @@ public class Buttons : MonoBehaviour
     public void nextLevel()
     {
         int previousScene = PlayerPrefs.GetInt("lastScene");
+        if(previousScene == 4)
+        {
+            SceneManager.LoadScene(5);
+        }
         {
            SceneManager.LoadScene(previousScene + 1);
         }
+        Debug.Log(previousScene);
     }
 
     public void GoLevel1()
