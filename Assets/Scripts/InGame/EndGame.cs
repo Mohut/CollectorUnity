@@ -20,13 +20,23 @@ public class EndGame : MonoBehaviour
         timer = FindObjectOfType<Timer>().timer;
         if (slider.value == 1)
         {
+            //save the current scene
             currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             PlayerPrefs.SetInt("lastScene", currentSceneIndex);
+
+            //loading finishing screen
             SceneManager.LoadScene(2);
         }
 
         if (timer < 0)
         {
+            //save the complete status
+            int currentLevel = SceneManager.GetActiveScene().buildIndex - 2;
+            if (currentLevel >= PlayerPrefs.GetInt("unlocked",1) && currentLevel <= 4)
+            {
+                PlayerPrefs.SetInt("unlocked", currentLevel);
+            }
+            Debug.Log(currentLevel);
             SceneManager.LoadScene(3);
         }
     }
