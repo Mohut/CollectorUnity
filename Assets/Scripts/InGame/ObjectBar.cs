@@ -11,12 +11,12 @@ public class ObjectBar : MonoBehaviour
     public void incrementProgress()
     { 
         slider.value += 0.1f;
-        image.color = Color.Lerp(Color.blue, Color.red, slider.value);
+        image.color = Color.Lerp(Color.green, Color.red, slider.value);
     }
 
     public void decrementProgress()
     {
         slider.value -= 0.1f;
-        image.color = Color.Lerp(Color.blue, Color.red, slider.value);
+        image.color = Color.Lerp(Color.green, Color.red, slider.value);
     }
 }
