@@ -14,16 +14,20 @@ public class Timer : MonoBehaviour
     {
         exploded = false;
         position = new Vector3(-77f, 7.5f, 0f);
+        //for the first three seconds
+        timer += 3;
     }
 
     // Update is called once per frame
     void Update()
     {
         timer -= Time.deltaTime;
-        timerText.text = timer.ToString("0");
-        transform.localScale = Vector3.one * (3 - (timer*0.1f));
-        //timerText.fontSize = (int) (100f - timer * 2);
-        
+        if (timer <= 20)
+        {
+           timerText.text = timer.ToString("0");
+           transform.localScale = Vector3.one * (3 - (timer * 0.1f)); 
+        }
+
         if(timer < .5f && !exploded)
         {
             timerText.enabled = false;

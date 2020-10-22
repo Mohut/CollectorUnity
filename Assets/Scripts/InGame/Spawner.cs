@@ -19,10 +19,10 @@ public class Spawner : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (timer > 1)
+        if (timer > 3)
         {
             spawn();
-            timer = 0;
+            timer = 2;
         }
     }
 

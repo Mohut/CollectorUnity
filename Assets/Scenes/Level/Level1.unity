@@ -377,6 +377,21 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4165993201551928758, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165993201551928758, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4165993201551928758, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5120970196870160432, guid: 7852a8de3618320499552c253eb1e3f9,
         type: 3}
       propertyPath: InitialModule.startSize.scalar
