@@ -1,17 +1,19 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
     public float timer;
-    public Text timerText;
-    [SerializeField] private Text text;
+    public TextMeshProUGUI timerText;
     [SerializeField] private ParticleSystem ps;
+    private bool exploded;
     private Vector3 position;
 
     private void Start()
     {
-        position = new Vector3(-50, 45, 0);
+        exploded = false;
+        position = new Vector3(-77f, 7.5f, 0f);
     }
 
     // Update is called once per frame
@@ -19,11 +21,14 @@ public class Timer : MonoBehaviour
     {
         timer -= Time.deltaTime;
         timerText.text = timer.ToString("0");
-        text.fontSize = (int) (100f - timer * 2);
-        if(timer < 0.5)
+        transform.localScale = Vector3.one * (3 - (timer*0.1f));
+        //timerText.fontSize = (int) (100f - timer * 2);
+        
+        if(timer < .5f && !exploded)
         {
-            text.enabled = false;
-            Instantiate(ps, position, Quaternion.identity);
+            timerText.enabled = false;
+            Instantiate(ps, position, Quaternion.Euler(-90, 0, 0));
+            exploded = true;
         }
     }
 }
