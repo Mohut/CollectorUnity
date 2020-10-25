@@ -330,6 +330,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3896460936763916038, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -50
+      objectReference: {fileID: 0}
     - target: {fileID: 3896460936763916282, guid: 7852a8de3618320499552c253eb1e3f9,
         type: 3}
       propertyPath: redP

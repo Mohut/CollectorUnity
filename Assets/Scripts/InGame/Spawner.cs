@@ -35,12 +35,12 @@ public class Spawner : MonoBehaviour
         {
             if (randomColor == 1)
             {
-                Instantiate(collectableB, new Vector3(randomX, 2, randomZ), Quaternion.identity);
+                Instantiate(collectableB, new Vector3(randomX, 3, randomZ), Quaternion.identity);
                 FindObjectOfType<ObjectBar>().incrementProgress();
             }
             else
             {
-                Instantiate(collectableR, new Vector3(randomX, 2, randomZ), Quaternion.identity);
+                Instantiate(collectableR, new Vector3(randomX, 3, randomZ), Quaternion.identity);
                 FindObjectOfType<ObjectBar>().incrementProgress();
             }
         }

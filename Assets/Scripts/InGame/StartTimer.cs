@@ -21,8 +21,18 @@ public class StartTimer : MonoBehaviour
     void Update()
     {
         time -= Time.deltaTime;
-        text.text = time.ToString("0");
-        transform.localScale = Vector3.one * (time);
+        if (time > 1)
+        {
+            text.text = time.ToString("0");
+            transform.localScale = Vector3.one * (time);
+        }
+        else
+        {
+            text.text = "Go!";
+            transform.localScale = Vector3.one * (time);
+        }
+        
+        
 
         if (time < 0)
         {
