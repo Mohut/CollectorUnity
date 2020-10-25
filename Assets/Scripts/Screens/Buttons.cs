@@ -11,7 +11,7 @@ public class Buttons : MonoBehaviour
     public void NewGame()
     {
         PlayerPrefs.SetInt("unlocked", 1);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(9);
     }
    
    public void retry()
