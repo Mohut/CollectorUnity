@@ -692,9 +692,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2a6a3b1cc4d8e748ae1ffe412fbfc4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  red: {fileID: 7834765146008227810, guid: 46f54a5147f0d234cb8c6ed88e89af23, type: 3}
-  green: {fileID: 7538547372799932873, guid: 6c4e3ab034bebd34aa443bd2a4453fc5, type: 3}
-  blue: {fileID: 4793384452759895772, guid: 91d4ded5f981b704dbc2bdbd77c8decd, type: 3}
+  red: {fileID: 8363756398088095701, guid: f93e26907d913f74189e032cd19a27f1, type: 3}
+  green: {fileID: 1886566850768674618, guid: b88957d9506cc8b4581cec636e810869, type: 3}
+  blue: {fileID: 1122227126931434519, guid: 57ace35881a8c8b4c887fe035c4a3dfd, type: 3}
 --- !u!1 &1473525600
 GameObject:
   m_ObjectHideFlags: 0

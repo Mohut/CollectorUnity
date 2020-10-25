@@ -14,13 +14,8 @@ public class SoundEffect : MonoBehaviour
     {
         source = GetComponent<AudioSource>();
         source.PlayOneShot(audioClip, volume);
-    }
-
-    private void Update()
-    {
         Invoke("delete", 1);
     }
-
     public void delete()
     {
         Destroy(gameObject);

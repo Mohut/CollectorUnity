@@ -26,8 +26,8 @@ public class Firework : MonoBehaviour
 
     public void FireworkBlast()
     {
-        float i = Random.Range(1, 4);
-        float a = Random.Range(1, 3);
+        float i = Random.Range(0, 4);
+        float a = Random.Range(0, 3);
         ParticleSystem particle;
 
         if (a < 1f)
@@ -43,16 +43,16 @@ public class Firework : MonoBehaviour
 
         if (i < 1f)
         {
-            Instantiate(particle, position1, Quaternion.identity);
+            Instantiate(particle, position1, Quaternion.Euler(90, 0,0));
         }else if (i < 2f)
         {
-            Instantiate(particle, position2, Quaternion.identity);
+            Instantiate(particle, position2, Quaternion.Euler(90, 0,0));
         }else if (i < 3f)
         {
-            Instantiate(particle, position3, Quaternion.identity);
+            Instantiate(particle, position3, Quaternion.Euler(90, 0,0));
         }else
         {
-            Instantiate(particle, position4, Quaternion.identity);
+            Instantiate(particle, position4, Quaternion.Euler(90, 0,0));
         }
     }
 }

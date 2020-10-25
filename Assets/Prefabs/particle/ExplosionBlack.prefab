@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -7171115716771930844}
   - component: {fileID: 4433212583053510739}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: ExplosionBlack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4712,7 +4712,7 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 8b2704d0bd171ab4c8e41fc4ced1e4d6, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 347a2e159a2e16e4ab00fc5fbe22e8db, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
