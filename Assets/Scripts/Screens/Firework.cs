@@ -21,7 +21,7 @@ public class Firework : MonoBehaviour
         position3 = new Vector3(310, -110, 500);
         position4 = new Vector3(-310, -110, 500);
         
-        InvokeRepeating("FireworkBlast", 1, 1);
+        InvokeRepeating("FireworkBlast", 0, 1);
     }
 
     public void FireworkBlast()

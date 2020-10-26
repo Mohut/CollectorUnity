@@ -18,7 +18,7 @@ public class SaveData : MonoBehaviour
         for(int i = 0; i < buttons.Length; i++)
         {
             buttons[i].interactable = false;
-            buttons[i].GetComponent<Image>().color = Color.red;
+            buttons[i].GetComponent<Image>().color = red;
         }
 
         for(int i = 0; i < levelsUnlocked; i++)

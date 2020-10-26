@@ -1,11 +1,25 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Buttons : MonoBehaviour
 {
-   public void startGame()
+    [SerializeField] private Button continueButton;
+    private void Start()
+    {
+        if (PlayerPrefs.GetInt("unlocked") == 0)
+        {
+            continueButton.image.color = new Color(0.8f, 0, 0, 1);
+        }
+    }
+
+    public void startGame()
    {
-      SceneManager.LoadScene(1);
+       if (PlayerPrefs.GetInt("unlocked") != 0)
+       {
+           SceneManager.LoadScene(1);
+       }
    }
 
     public void NewGame()

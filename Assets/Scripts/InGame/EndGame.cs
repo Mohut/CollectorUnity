@@ -41,7 +41,15 @@ public class EndGame : MonoBehaviour
                 PlayerPrefs.SetInt("unlocked", currentLevel);
             }
             Debug.Log(currentLevel);
-            SceneManager.LoadScene(3);
+            if (SceneManager.GetActiveScene().buildIndex != 7)
+            {
+               SceneManager.LoadScene(3);  
+            }
+            else
+            {
+                SceneManager.LoadScene(8);
+            }
+           
         }
     }
 }

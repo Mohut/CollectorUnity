@@ -7,6 +7,12 @@ public class ObjectBar : MonoBehaviour
 {
     public Slider slider;
     public Image image;
+    private Color32 green;
+
+    private void Start()
+    {
+        green = new Color32();
+    }
 
     public void incrementProgress()
     { 

@@ -169,6 +169,11 @@ PrefabInstance:
       propertyPath: ShapeModule.radiusThickness
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3243086906487086966, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3896460935462335516, guid: 7852a8de3618320499552c253eb1e3f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -280,6 +285,61 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3896460936066278563, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896460936066278563, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896460936066278563, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896460936066278563, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896460936066278563, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896460936066278563, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896460936066278564, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896460936066278564, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896460936192045360, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896460936192045360, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_UseSpriteMesh
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896460936192045360, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3896460936192045362, guid: 7852a8de3618320499552c253eb1e3f9,
         type: 3}
       propertyPath: m_RootOrder
@@ -328,6 +388,11 @@ PrefabInstance:
     - target: {fileID: 3896460936737173281, guid: 7852a8de3618320499552c253eb1e3f9,
         type: 3}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3896460936737173295, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3896460936763916038, guid: 7852a8de3618320499552c253eb1e3f9,
@@ -427,6 +492,16 @@ PrefabInstance:
       propertyPath: InitialModule.startColor.maxColor.a
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6120968098255755984, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6120968098255755984, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6173039059053896797, guid: 7852a8de3618320499552c253eb1e3f9,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -446,6 +521,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BaseLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175355457146474362, guid: 7852a8de3618320499552c253eb1e3f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7875042599289418818, guid: 7852a8de3618320499552c253eb1e3f9,
         type: 3}
